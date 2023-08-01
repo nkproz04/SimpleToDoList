@@ -1,0 +1,126 @@
+body {
+  background: linear-gradient(to right, #232526, #414345);
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.container {
+  width: 80%; 
+  max-width: 800px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  text-align: center;
+  color: #ff0099;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-shadow: 0px 0px 10px #ff0099, 0px 0px 20px #ff00ff, 0px 0px 30px #ff00ff, 0px 0px 40px #ff00ff;
+}
+
+#new-task-content {
+  width: calc(100% - 70px);
+  padding: 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ff0099;
+  color: #fff;
+  font-size: 22px;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  background: #ff0099;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 26px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.row p {
+  color: #fff;
+  flex-grow: 1;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.delete {
+  background: none;
+  border: none;
+  color: #e84118;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.mark-complete {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.row {
+  border: 1px solid #ff0099;
+  box-shadow: 0px 0px 10px #ff0099, 0px 0px 20px #ff00ff, 0px 0px 30px #ff00ff, 0px 0px 40px #ff00ff;
+}
+
+.delete:hover {
+  color: #ff0099;
+  text-shadow: 0px 0px 10px #ff0099, 0px 0px 20px #ff00ff, 0px 0px 30px #ff00ff, 0px 0px 40px #ff00ff;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 10px #ff0099, 0px 0px 20px #ff00ff, 0px 0px 30px #ff00ff, 0px 0px 40px #ff00ff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  
+  #new-task-content {
+    font-size: 18px;
+  }
+  
+  .btn {
+    width: 36px;
+    height: 36px;
+    font-size: 22px;
+  }
+
+  .row p {
+    font-size: 18px;
+  }
+
+  .delete {
+    font-size: 20px;
+  }
+
+  .mark-complete {
+    width: 20px;
+    height: 20px;
+  }
+}
